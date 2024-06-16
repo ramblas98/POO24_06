@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.time.LocalDate;
 import java.time.Month;
 import java.util.Collections;
+import java.util.HashSet;
 import java.util.TreeSet;
 
 /**
@@ -28,6 +29,21 @@ public class TP_6_EJ5 {
         System.out.println("ArrayList Con CompareTo");
         Collections.sort(lista);
         System.out.println(lista.toString());
+        
+        
+        System.out.println();
+        
+        
+        
+        System.out.println("HashSet");
+        HashSet <Estudiante>lista0 = new HashSet();
+        lista0.add(new Estudiante("Luis","TUP",LocalDate.of(2004,Month.SEPTEMBER, 02),4527));
+        lista0.add(new Estudiante("Agustin","LAS",LocalDate.of(2000,Month.JANUARY, 06),4567));
+        lista0.add(new Estudiante("Marcos","TIG",LocalDate.of(2003,Month.JULY, 26),4547));
+        lista0.add(new Estudiante("Gonzalo","IRNyF",LocalDate.of(2005,Month.DECEMBER, 15),4517));
+        lista0.add(new Estudiante("Luis","TUP",LocalDate.of(2004,Month.SEPTEMBER, 02),4527));
+        System.out.println(lista0.toString());
+        
         
         
         System.out.println();
